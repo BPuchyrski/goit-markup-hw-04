@@ -35,7 +35,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.icon {
+.icon-header-mail {
   width: 16px;
   height: 12px;
   fill: var(--lightgray);
@@ -96,7 +96,7 @@ img {
 .header-contact__list {
   list-style: none;
   display: flex;
-  padding-left: 0px;
+  align-items: baseline;
 }
 .header-contact__item {
   font-weight: 500;
@@ -119,6 +119,12 @@ img {
 .header-contact__link:hover svg {
   fill: var(--blue);
 }
+
+.icon-header-smartphone {
+  width: 16px;
+  height: 10px;
+}
+
 /* footer */
 .page-footer {
   background-color: var(--bgcolor);
@@ -245,6 +251,16 @@ img {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+.work-description__icon {
+  width: 70px;
+  height: 70px;
+}
+.work-description__icon-div {
+  background-color: rgba(245, 244, 250, 1);
+  display: inline-block;
+  padding: 25px 100px 25px 100px;
+}
+
 .work-photos {
   background-color: #e5e5e5;
 }
@@ -311,6 +327,12 @@ img {
   color: var(--gray);
   line-height: 1.17;
 }
+.icon-team {
+  fill: var(--lightgray);
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
 /* main-portfolio */
 
 .portfolio-nav__list {
