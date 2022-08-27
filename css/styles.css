@@ -350,6 +350,31 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+.clients__header {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(33, 33, 33, 1);
+  margin-bottom: 50px;
+}
+.clients__div {
+  display: flex;
+  justify-content: space-between;
+}
+.clients__bg-and-border {
+  padding: 17.71px 32px 14.25px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients__bg-and-border:hover svg {
+  color: var(--blue);
+  fill: #2196f3;
+}
+.clients__bg-and-border:hover {
+  border: 1px solid var(--blue);
+  cursor: pointer;
+}
 /* main-portfolio */
 
 .portfolio-nav__list {
