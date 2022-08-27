@@ -309,7 +309,7 @@ img {
   background-color: var(--white);
   font-size: 16px;
   color: var(--lightgray);
-  padding-bottom: 27px;
+  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -328,11 +328,28 @@ img {
   line-height: 1.17;
 }
 .icon-team {
-  fill: var(--lightgray);
-  margin-top: 16px;
-  margin-bottom: 18px;
+  fill: rgba(175, 177, 184, 1);
 }
-
+.team-social-icon-div {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.icon-team-social-div {
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+}
+.icon-team-social-div:hover svg {
+  fill: #fff;
+}
+.icon-team-social-div:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
 /* main-portfolio */
 
 .portfolio-nav__list {
