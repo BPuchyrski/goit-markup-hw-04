@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
@@ -29,6 +29,7 @@
             <li class="header-nav__item">
               <a class="header-nav__link" href="./agencja.html">Agencja</a>
             </li>
+
             <li class="header-nav__item">
               <a href="./portfolio.html" class="header-nav__link">Portfolio</a>
             </li>
@@ -40,14 +41,20 @@
         <section class="header-contact">
           <ul class="header-contact__list">
             <li class="header-contact__item">
-              <a class="header-contact__link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="header-contact__link" href="mailto:info@devstudio.com">
+                <svg class="icon-header-mail">
+                  <use href="images/icons.svg#envelope1"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
             <li class="header-contact__item">
-              <a class="header-contact__link" href="tel:+48 111 111 111"
-                >+48 111 111 111</a
-              >
+              <a class="header-contact__link" href="tel:+48 111 111 111">
+                <svg class="icon-header-smartphone">
+                  <use href="images/icons.svg#smartphone"></use>
+                </svg>
+                +48 111 111 111
+              </a>
             </li>
           </ul>
         </section>
@@ -172,24 +179,51 @@
     </main>
     <footer class="page-footer">
       <div class="footer-container container">
-        <section class="footer-logo">
-          <a class="footer-logo__link" href="./index.html">
-            <span class="footer-logo__link--blue">Web</span>Studio</a
-          >
-        </section>
-        <p class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</p>
-        <ul class="footer-contact-list">
-          <li class="footer-contact__item">
-            <a class="footer-contact__link" href="mailto:info@example.com"
-              >info@example.com</a
+        <div>
+          <section class="footer-logo">
+            <a class="footer-logo__link" href="./index.html">
+              <span class="footer-logo__link--blue">Web</span>Studio</a
             >
-          </li>
-          <li class="footer-contact__item">
-            <a class="footer-contact__link" href="tel:+48 111 111 111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+          </section>
+          <p class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <ul class="footer-contact-list">
+            <li class="footer-contact__item">
+              <a class="footer-contact__link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-contact__item">
+              <a class="footer-contact__link" href="tel:+48 111 111 111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <p>dołącz do nas</p>
+          <div class="footer__social-icon-div">
+            <div class="icon-footer-social-div">
+              <svg class="footer__icon" width="20" height="20">
+                <use href="./images/icons.svg#instagram-2"></use>
+              </svg>
+            </div>
+            <div class="icon-footer-social-div">
+              <svg class="footer__icon" width="20" height="20">
+                <use href="./images/icons.svg#twitter-1"></use>
+              </svg>
+            </div>
+            <div class="icon-footer-social-div">
+              <svg class="footer__icon" width="20" height="20">
+                <use href="./images/icons.svg#Vector1"></use>
+              </svg>
+            </div>
+            <div class="icon-footer-social-div">
+              <svg class="footer__icon" width="20" height="20">
+                <use href="./images/icons.svg#linkedin-1"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

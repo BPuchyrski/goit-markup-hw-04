@@ -116,7 +116,8 @@ img {
   color: var(--blue);
 }
 
-.header-contact__link:hover svg {
+.header-contact__link:hover svg,
+.header-contact__link:focus svg {
   fill: var(--blue);
 }
 
@@ -132,6 +133,7 @@ img {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -178,6 +180,41 @@ img {
 .footer-contact__link:focus {
   color: var(--blue);
 }
+.footer__socials {
+  margin-left: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.footer__socials p {
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+.footer__social-icon-div {
+  display: flex;
+}
+.footer__icon {
+  fill: var(--white);
+  display: block;
+}
+.icon-footer-social-div {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.icon-footer-social-div:last-child {
+  margin-right: 0px;
+}
+.icon-footer-social-div:hover,
+.icon-footer-social-div:focus {
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
 /* index-main */
 .header-main-section {
   background-color: var(--bgcolor);
@@ -342,9 +379,11 @@ img {
   height: 40px;
   padding-top: 10px;
 }
-.icon-team-social-div:hover svg {
+.icon-team-social-div:hover svg,
+.icon-team-social-div:focus svg {
   fill: #fff;
 }
+.icon-team-social-div:hover,
 .icon-team-social-div:hover {
   background-color: #2196f3;
   border-radius: 50%;
@@ -367,11 +406,13 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients__bg-and-border:hover svg {
+.clients__bg-and-border:hover svg,
+.clients__bg-and-border:focus svg {
   color: var(--blue);
   fill: #2196f3;
 }
-.clients__bg-and-border:hover {
+.clients__bg-and-border:hover,
+.clients__bg-and-border:focus {
   border: 1px solid var(--blue);
   cursor: pointer;
 }
