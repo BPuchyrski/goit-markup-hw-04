@@ -122,8 +122,9 @@ img {
 }
 
 .icon-header-smartphone {
-  width: 16px;
-  height: 10px;
+  width: 10px;
+  height: 16px;
+  padding-top: 5px;
 }
 
 /* footer */
@@ -134,6 +135,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  align-items: baseline;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -191,7 +193,6 @@ img {
 }
 .footer__socials p {
   margin-bottom: 20px;
-  margin-top: 7px;
 }
 .footer__social-icon-div {
   display: flex;
@@ -228,8 +229,8 @@ img {
   background-position: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  /* max-width: 1600px;
-  margin: 0 auto; */
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .main-section-header {
   display: flex;
@@ -375,9 +376,11 @@ img {
   margin-top: 16px;
 }
 .icon-team-social-div {
-  width: 40px;
-  height: 40px;
-  padding-top: 10px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon-team-social-div:hover svg,
 .icon-team-social-div:focus svg {
@@ -402,9 +405,13 @@ img {
   justify-content: space-between;
 }
 .clients__bg-and-border {
-  padding: 17.71px 32px 14.25px;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clients__bg-and-border:hover svg,
 .clients__bg-and-border:focus svg {
