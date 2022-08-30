@@ -297,6 +297,7 @@ img {
   background-color: rgba(245, 244, 250, 1);
   display: inline-block;
   padding: 25px 100px 25px 100px;
+  margin-bottom: 30px;
 }
 
 .work-photos {
